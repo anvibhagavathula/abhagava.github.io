@@ -24,7 +24,7 @@
 						<p class="major">I'm a senior at Brown University studying Physics and Applied Mathematics. I'm interested in researching the applications of computational simulation and machine learning to the physical sciences</a>.</p>
 						<ul class="actions fit small">
 							<li><a href="#about_me" class="button fit small smooth-scroll-middle">About Me</a></li>
-							<li><a href="#" class="button fit small smooth-scroll-middle">Research</a></li>
+							<li><a href="#research" class="button fit small smooth-scroll-middle">Research</a></li>
 							<li><a href="#" class="button fit small smooth-scroll-middle">Leadership</a></li>
 							<li><a href="#CV" class="button fit small smooth-scroll-middle">CV</a></li>
 						</ul>
@@ -63,7 +63,7 @@
 				</section>
 
 				<!-- Research Projects Section -->
-				<section class="wrapper style1 align-center">
+				<section class="wrapper style1 align-center", id="research">
 						<div class="inner">
 						<div class="index align-left">
 							<section>
@@ -78,12 +78,13 @@
 									<dl>
 										<dt, id="adapt"><strong>Self-Adaptive Physics-Informed Neural Networks [Oct 2022 - Present]</strong></dt>
 										<dd>
-											<p>I created a self-adaptive physics-informed neural network (PINN) to solve a one-dimensional differential equation in a team of three students using Jax. To do so, we designed a custom loss function for our model that enforced the structure of the solution and its boundary condition behavior. We then created an adaptive regularizer that penalized the boundary loss terms during training to produce more accurate solutions. We are now working on adaptively optimizing the number of collocation points our model uses to generate well-defined solutions in data-poor regimes. The repository/code for this project is available <a href="https://github.com/philipladuca24/PINNs-Project", style="color:#2986cc">here</a>.</p>
+											<p>Advised by Dr. Somdatta Goswami, I created a self-adaptive physics-informed neural network (PINN) to solve a one-dimensional differential equation in a team of three students using Jax. To do so, we designed a custom loss function for our model that enforced the structure of the solution and its boundary condition behavior. We then created an adaptive regularizer that penalized the boundary loss terms during training to produce more accurate solutions. We are now working on adaptively optimizing the number of collocation points our model uses to generate well-defined solutions in data-poor regimes. The repository/code for this project is available <a href="https://github.com/philipladuca24/PINNs-Project", style="color:#2986cc">here</a>.</p>
 											<span class="image fit"><img src="images/PINNs_Poster.jpg" alt="" /></span>			
 										</dd>
 										<dt, id="protein"><strong>Leveraging Machine Learning to Predict Protein Digestibility [June 2022 - Present]</strong></dt>
 										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
+											<p>Advised by Dr. Sara Malvar this past summer, I developed an interpretable machine-learning based method to predict food protein digestibility, a value normally determined using invasive animal experimentation. To tackle this problem, I first created a 2000-point ground-truth protein property dataset that mapped features such as food nutritional information and protein sequence embeddings, extracted from a pre-trained transformer model, to digestibility coefficients. Then, I used Shapley value analysis to only select features that had established relationships to protein digestibility in the literature to train tree-based models on. We found that this biologically-interpretable dimensionality reduction was key in achieving the high accuracies our models did through an ablation study. After the summer, I co-authored a paper summarizing our findings that is available on <a, href="https://arxiv.org/abs/2211.00625", style="color:#2986cc">arXiv</a>.</p>
+											<span class="image fit"><img src="images/digestibility_model.jpg" alt="" /></span>	
 										</dd>
 										<dt, id="dft"><strong>Investigating the Properties of Twisted Trilayer Graphene Systems Using Density Functional Theory (DFT) [June 2021 - Present]</strong></dt>
 										<dd>
